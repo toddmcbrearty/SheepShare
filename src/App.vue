@@ -1,28 +1,22 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+    <lamb-share :data="{url, via: 'onclive'}"></lamb-share>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import LambShare from './components/LambShare';
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    LambShare,
+  },
+  data() {
+    return {
+      url: 'https://www.onclive.com/publications/oncology-live/2018/vol-19-no-24/tucatinib-shows-promise-in-patients-with-breast-cancer-and-brain-metastases?utm_source=onclive&utm_medium=HPbackdrop&utm_campaign=tucatinib'
+    }
   }
 }
 </script>
 
 <style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>
