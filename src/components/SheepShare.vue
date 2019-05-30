@@ -41,52 +41,8 @@
   library.add(faAt);
 
   Vue.component('font-awesome-icon', FontAwesomeIcon);
-  // salesforce event pixel data
-  const defaultWidth = 551;
-  const defaultHeight = 550;
 
-  const kruxData = {
-    print: {
-      id: 'Mj2CZR7v',
-      event: 'clk',
-      width: defaultWidth,
-      height: defaultHeight,
-      target: '_blank',
-    },
-    email: {
-      id: 'Mj2COWsc',
-      event: 'clk',
-      width: defaultWidth,
-      height: defaultHeight,
-      target: '_blank',
-    },
-    facebook: {
-      id: 'Mj2BjMcy',
-      event: 'social',
-      width: defaultWidth,
-      height: defaultHeight,
-      target: 'social-share-popup',
-    },
-    twitter: {
-      id: 'Mj2Bx9pV',
-      event: 'social',
-      width: defaultWidth,
-      height: 450,
-      target: 'social-share-popup',
-    },
-    linkedin: {
-      id: 'Mj2B5mbD',
-      event: 'social',
-      width: defaultWidth,
-      height: defaultHeight,
-      target: 'social-share-popup',
-    },
-    video: {
-      id: 'Mm4KYJOv',
-      event: 'vvid',
-      percent_watched: '',
-    },
-  };
+
   export default {
     name: 'LambShare',
     props: {
@@ -125,36 +81,36 @@
           print: {
             id: 'Mj2CZR7v',
             event: 'clk',
-            width: defaultWidth,
-            height: defaultHeight,
+            width: this.defaultWidth,
+            height: this.defaultHeight,
             target: '_blank',
           },
           email: {
             id: 'Mj2COWsc',
             event: 'clk',
-            width: defaultWidth,
-            height: defaultHeight,
+            width: this.defaultWidth,
+            height: this.defaultHeight,
             target: '_blank',
           },
           facebook: {
             id: 'Mj2BjMcy',
             event: 'social',
-            width: defaultWidth,
-            height: defaultHeight,
+            width: this.defaultWidth,
+            height: this.defaultHeight,
             target: 'social-share-popup',
           },
           twitter: {
             id: 'Mj2Bx9pV',
             event: 'social',
-            width: defaultWidth,
+            width: this.defaultWidth,
             height: 450,
             target: 'social-share-popup',
           },
           linkedin: {
             id: 'Mj2B5mbD',
             event: 'social',
-            width: defaultWidth,
-            height: defaultHeight,
+            width: this.defaultWidth,
+            height: this.defaultHeight,
             target: 'social-share-popup',
           },
           video: {
@@ -162,7 +118,9 @@
             event: 'vvid',
             percent_watched: '',
           },
-        }
+        },
+        defaultWidth: 551,
+        defaultHeight: 550,
       };
     },
 

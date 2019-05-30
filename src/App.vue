@@ -1,14 +1,14 @@
 <template>
-    <lamb-share :data="{url, via: 'onclive'}"></lamb-share>
+    <sheep-share :data="{url, via: 'onclive'}"></sheep-share>
 </template>
 
 <script>
-import LambShare from './components/LambShare';
+import SheepShare from './components/SheepShare';
 
 export default {
   name: 'app',
   components: {
-    LambShare,
+    SheepShare,
   },
   data() {
     return {
