@@ -1,4 +1,4 @@
-# c-library
+# components library
 
 ## Project setup
 ```
